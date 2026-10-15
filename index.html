@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1V1 Me Online | Street Chess Gary</title>
+  <meta name="description" content="1V1 Street Chess Gary online. Pick your battle, pay, get in the queue. Your game could end up on the channel.">
+  <meta property="og:title" content="Check out my online rating | Street Chess Gary">
+  <meta property="og:description" content="Gary vs The Streets. Now it's your turn. Book a game and get in the queue.">
+  <meta property="og:image" content="img/og.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="rating-bar" id="rating-bar" aria-live="polite"><span class="muted">Loading live rating…</span></div>
+    </div>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="logo" aria-label="SCG">SCG</div>
+        <p class="kicker"><span id="site-name"></span> · Gary vs The Streets</p>
+        <h1><span class="onev1">1V1</span><span class="h1-line">Me <em>online</em></span></h1>
+        <p class="tagline" id="tagline"></p>
+        <a class="btn hero-cta" href="#tiers-h">Pick your battle</a>
+        <nav class="links" id="links"></nav>
+      </div>
+      <img class="hero-img" src="img/ep1-thumb.jpg" alt="Street Chess Gary 1V1 thumbnail: Gary vs Chain Gang KD" width="1364" height="768">
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section aria-labelledby="tiers-h">
+      <h2 id="tiers-h">Pick your battle</h2>
+      <div class="tiers" id="tiers"></div>
+    </section>
+
+    <section aria-labelledby="queue-h" class="panel">
+      <h2 id="queue-h">The queue</h2>
+      <ol class="queue" id="queue"></ol>
+      <p class="muted" id="queue-wait"></p>
+    </section>
+
+    <section aria-labelledby="how-h">
+      <h2 id="how-h">How it works</h2>
+      <ol class="steps">
+        <li><strong>Book a battle.</strong> Checkout asks for your <span class="platforms"></span> username.</li>
+        <li><strong>Get in the queue.</strong> You'll show up above within a few hours, usually sooner.</li>
+        <li><strong>Get the challenge.</strong> When you're up, I send it on the platform you picked. Be online!</li>
+        <li><strong>Make the channel.</strong> The best battles get posted as Park Battles episodes and shorts.</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="faq-h" class="panel">
+      <h2 id="faq-h">Fine print</h2>
+      <dl class="faq">
+        <dt>Will the game be recorded?</dt>
+        <dd>Yes. Games may be streamed or posted as videos, showing your chess username. Booking means you agree to that.</dd>
+        <dt>What if I miss my slot?</dt>
+        <dd>I'll try once more later the same day. If we still can't connect, email me to reschedule.</dd>
+        <dt>Refunds?</dt>
+        <dd>If I can't play you within 7 days, you get a full refund.</dd>
+        <dt>Is this a bet?</dt>
+        <dd>No. You're paying for my time and a game. There's no prize or stake on the result.</dd>
+      </dl>
+      <p class="muted">Questions? <a id="contact"></a></p>
+    </section>
+  </main>
+
+  <footer class="wrap muted">© <span id="year"></span> <span class="site-name"></span></footer>
+
+  <script src="config.js"></script>
+  <script src="queue.js"></script>
+  <script src="app.js"></script>
+  <script src="rating.js"></script>
+</body>
+</html>
