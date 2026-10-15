@@ -137,6 +137,19 @@ h1 { margin: 0; font-family: var(--display); font-weight: 400; text-transform: u
 .btn:hover { filter: brightness(1.08); }
 .btn.disabled { background: var(--surface-2); color: var(--muted); box-shadow: none; cursor: not-allowed; }
 
+/* Hey smart guy callout */
+.callout {
+  display: grid; grid-template-columns: minmax(0, 360px) 1fr; gap: 28px; align-items: center;
+  margin-top: 3rem; padding: 22px; border-radius: 14px;
+  background: linear-gradient(120deg, rgba(255,210,31,.10), var(--surface) 60%);
+  border: 1px solid var(--border);
+}
+.callout img { width: 100%; height: auto; border-radius: 12px; display: block; box-shadow: 0 0 24px rgba(25,211,197,.2); }
+.callout h2 { margin: 0 0 .6rem; color: #fff; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.05; }
+.callout h2 span { color: var(--yellow); }
+.callout .btn { display: inline-block; padding: 12px 32px; margin-top: 8px; }
+@media (max-width: 640px) { .callout { grid-template-columns: 1fr; } }
+
 /* Panels */
 .panel {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
