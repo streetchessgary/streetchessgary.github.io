@@ -27,7 +27,10 @@
         <p class="kicker"><span id="site-name"></span> · Gary vs The Streets</p>
         <h1><span class="onev1">1V1</span><span class="h1-line">Me <em>online</em></span></h1>
         <p class="tagline" id="tagline"></p>
-        <a class="btn hero-cta" href="#tiers-h">Pick your battle</a>
+        <div class="hero-ctas">
+          <a class="btn hero-cta" href="#tiers-h">Pick your battle</a>
+          <a class="btn btn-ghost hero-cta" href="#live">Watch me live</a>
+        </div>
         <nav class="links" id="links"></nav>
       </div>
       <div class="matchup" role="img" aria-label="Street Chess Gary versus a mystery challenger: smart guy">
@@ -62,6 +65,30 @@
         <p class="muted">Everybody's a genius in the comments. Put your rating where your mouth is.</p>
         <a class="btn" href="#tiers-h">Prove it</a>
       </div>
+    </section>
+
+    <section id="live" class="panel watch-live" aria-labelledby="live-h">
+      <h2 id="live-h">Watch me live</h2>
+      <p class="live-status" id="live-status" aria-live="polite">Checking if I'm playing…</p>
+      <div class="live-embed" id="live-embed"></div>
+      <div class="live-actions">
+        <a class="btn" id="watch-live" href="https://lichess.org/" target="_blank" rel="noopener">Watch me live on Lichess</a>
+        <a class="btn btn-ghost" id="all-games" href="https://lichess.org/" target="_blank" rel="noopener">See all my games</a>
+      </div>
+    </section>
+
+    <section id="rating-chart" class="panel chart" aria-labelledby="chart-h">
+      <h2 id="chart-h" class="chart-title">My rating · last 30 days</h2>
+      <div class="chart-stats"></div>
+      <div class="chart-plot"></div>
+      <p class="muted chart-note">Loading games from Lichess…</p>
+      <details class="chart-table">
+        <summary>Show the numbers</summary>
+        <table>
+          <thead><tr><th scope="col">Day</th><th scope="col">Closing rating</th><th scope="col">Games</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </details>
     </section>
 
     <section aria-labelledby="queue-h" class="panel">
@@ -102,5 +129,7 @@
   <script src="queue.js"></script>
   <script src="app.js"></script>
   <script src="rating.js"></script>
+  <script src="live.js"></script>
+  <script src="rating-chart.js"></script>
 </body>
 </html>

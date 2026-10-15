@@ -4,6 +4,7 @@ const SITE = {
   short: 'SCG',
   tagline: 'Think you can beat me? Pick your battle and get in the queue.',
   lichess: 'garymccormack',                   // live rating source; swap for a new account anytime
+  chartPerf: 'rapid',                         // which rating the 30-day chart plots
   platforms: ['Lichess', 'Chess.com'],       // where games are played
   contactEmail: 'gmccormackinc@gmail.com',
   links: [                                     // shown in the header; leave '' to hide

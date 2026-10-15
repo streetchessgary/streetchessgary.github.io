@@ -150,6 +150,54 @@ h1 { margin: 0; font-family: var(--display); font-weight: 400; text-transform: u
 .callout .btn { display: inline-block; padding: 12px 32px; margin-top: 8px; }
 @media (max-width: 640px) { .callout { grid-template-columns: 1fr; } }
 
+/* Hero buttons */
+.hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn-ghost { background: transparent; color: var(--teal); border: 2px solid var(--teal); box-shadow: none; }
+
+/* Watch me live */
+.live-status { display: flex; align-items: center; gap: 8px; font-weight: 600; margin: 0 0 14px; }
+.live-dot {
+  display: inline-flex; align-items: center; gap: 6px; font-size: .72rem; font-weight: 800; letter-spacing: .08em;
+  color: #fff; background: #e5484d; padding: 3px 10px; border-radius: 999px;
+}
+.live-dot::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: #fff; animation: pulse 1.6s infinite; }
+@media (prefers-reduced-motion: reduce) { .live-dot::before { animation: none; } }
+.watch-live.is-live { border-color: #e5484d; box-shadow: 0 0 24px rgba(229,72,77,.18); }
+.live-embed iframe { width: 100%; max-width: 720px; aspect-ratio: 600 / 397; border: 0; border-radius: 10px; display: block; background: var(--surface-2); }
+.live-embed:empty { display: none; }
+.live-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.live-actions .btn { display: inline-block; padding: 11px 22px; }
+
+/* 30-day rating chart */
+.chart-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-bottom: 14px; }
+.stat { background: var(--surface-2); border-radius: 10px; padding: 10px 14px; }
+.stat b { display: block; font-size: 1.5rem; font-weight: 800; }
+.stat b.up { color: #3ee07a; }
+.stat b.down { color: #ff6b6b; }
+.stat span { font-size: .8rem; color: var(--muted); }
+.chart-plot { position: relative; width: 100%; }
+.chart-plot svg { display: block; width: 100%; height: auto; outline: none; touch-action: pan-y; }
+.chart-plot svg:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; border-radius: 6px; }
+.chart-plot .grid { stroke: var(--border); stroke-width: 1; }
+.chart-plot .tick { fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.chart-plot .line { fill: none; stroke: var(--teal); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.chart-plot .area { fill: var(--teal); opacity: .1; }
+.chart-plot .dot { fill: var(--teal); stroke: var(--surface); stroke-width: 2; }
+.chart-plot .cross { stroke: var(--muted); stroke-width: 1; }
+.chart-plot .end-label { fill: var(--text); font-size: 13px; font-weight: 800; }
+.chart-tip {
+  position: absolute; pointer-events: none; background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 10px; display: grid; gap: 1px; box-shadow: 0 6px 20px rgba(0,0,0,.4);
+}
+.chart-tip strong { font-size: 1.05rem; }
+.chart-tip span { font-size: .78rem; color: var(--muted); }
+.chart-note:empty { display: none; }
+.chart-table { margin-top: 10px; font-size: .9rem; }
+.chart-table summary { cursor: pointer; color: var(--teal); font-weight: 600; }
+.chart-table table { width: 100%; border-collapse: collapse; margin-top: 8px; font-variant-numeric: tabular-nums; }
+.chart-table th, .chart-table td { text-align: left; padding: 6px 4px; border-bottom: 1px solid var(--border); }
+.chart-table th { color: var(--muted); font-weight: 600; }
+
 /* Panels */
 .panel {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
