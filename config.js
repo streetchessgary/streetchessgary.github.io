@@ -78,8 +78,8 @@ const TIERS = [
     timeControl: '3+0',
     minutes: 40,
     price: 100,
-    blurb: 'The full SCG treatment. Your battle becomes an episode.',
-    perks: ['Full video on YouTube', 'Shorts cut from your battle'],
+    blurb: 'Think you\'re smart? Star in the next episode of the Smart Guy series on YouTube.',
+    perks: ['Your own Smart Guy series episode', 'Shorts cut from your battle'],
     featured: false,
     premium: true,                 // full-width headline card
     paymentLink: 'https://buy.stripe.com/00waEZ6SB0eH7KefwI1oI04',
