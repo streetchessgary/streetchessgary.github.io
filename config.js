@@ -30,7 +30,7 @@ const TIERS = [
     price: 5,
     blurb: 'One game, one minute each. No time to think.',
     featured: false,
-    paymentLink: 'https://buy.stripe.com/test_bJe00j0Q863HajJ46AeEo00',
+    paymentLink: 'https://buy.stripe.com/eVq4gB4Kt7H9ggKbgs1oI03',
   },
   {
     id: 'blitz-1',
@@ -42,7 +42,7 @@ const TIERS = [
     price: 10,
     blurb: 'One fast game. Bragging rights if you win.',
     featured: true,
-    paymentLink: 'https://buy.stripe.com/test_28EfZheGYfEhfE3bz2eEo01',
+    paymentLink: 'https://buy.stripe.com/dRm00l7WF4uX3tY5W81oI02',
   },
   {
     id: 'rapid-1',
@@ -54,7 +54,7 @@ const TIERS = [
     price: 15,
     blurb: 'More time on the clock. No excuses.',
     featured: false,
-    paymentLink: 'https://buy.stripe.com/test_14A5kD8iA3Vz1Nd8mQeEo02',
+    paymentLink: 'https://buy.stripe.com/aFaaEZel30eH2pUesE1oI01',
   },
   {
     id: 'blitz-bo3',
@@ -67,7 +67,7 @@ const TIERS = [
     price: 25,
     blurb: 'Three rounds. Win the set, win the streets.',
     featured: false,
-    paymentLink: 'https://buy.stripe.com/test_7sYfZh42kcs5ezZauYeEo03',
+    paymentLink: 'https://buy.stripe.com/4gM8wR0udgdFc0udoA1oI00',
   },
   {
     id: 'street-master',
@@ -82,6 +82,6 @@ const TIERS = [
     perks: ['Full video on YouTube', 'Shorts cut from your battle'],
     featured: false,
     premium: true,                 // full-width headline card
-    paymentLink: 'https://buy.stripe.com/test_4gMcN50Q89fTcrR32weEo04',
+    paymentLink: 'https://buy.stripe.com/00waEZ6SB0eH7KefwI1oI04',
   },
 ];
