@@ -70,9 +70,9 @@ const TIERS = [
     paymentLink: 'https://buy.stripe.com/4gM8wR0udgdFc0udoA1oI00',
   },
   {
-    id: 'street-master',
+    id: 'smart-guy',
     perf: 'blitz',
-    name: 'Street Master',
+    name: 'Smart Guy Tier',
     games: 5,
     format: 'Best of 5 blitz',
     timeControl: '3+0 or 5+0',
