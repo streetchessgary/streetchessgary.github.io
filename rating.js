@@ -13,8 +13,7 @@
   // Which time control gets the big number at the top of the page.
   // perfs looks like { bullet: { rating, games, prog, prov }, blitz: {...}, rapid: {...} }
   function pickHeadline(perfs) {
-    // TODO(human): choose which rating to headline (return 'bullet', 'blitz' or 'rapid').
-    return 'blitz';
+    return 'rapid';   // Gary's pick; falls back to the first rated time control if rapid is missing
   }
 
   function trend(prog) {
